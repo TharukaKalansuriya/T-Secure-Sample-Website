@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Tharuka.UOG0322055</title>
+	
+	<style>
+		.main{
+		width: 100%;
+		height:100vh;
+		position: relative;
+		overflow: hidden;
+		background: linear-gradient(to left, #06C2A3, #04977F, #FFFFFF);
+		
+		}
+		body {
+				margin: 0;
+				padding: 0;
+		}
+		nav{
+			width:80%;
+			position: sticky;
+			margin: 20px auto;
+			z-index: 1;
+			display: flex;
+			align-items: center;
+		}
+		.mylogo{
+			flex-basis: 0%;
+			width:150px;
+			height:auto;
+		}
+		.mylogo img{
+			width: 200px;
+			float: right;
+		}
+		.navi{
+			margin: 0;
+			padding: 0;
+			flex: 1;
+			text-align: right;
+			font-family: Calibri;
+			font-size:17px;
+		}
+		.navi ul li{
+			list-style: none;
+			display: inline-block;
+			margin: 0 10px;
+		}
+		.navi ul li a{
+		color: #020202;
+		text-decoration: none;
+		font-weight: bold
+		}
+		.info{
+			width: 1000px;
+			height: 1000px;
+			position: absolute;
+			top: 50%;
+			left: -10%;
+			transform: translateY(-50%);
+		}
+		#circle{
+			width: 1000px;
+			height: 1000px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			border-radius: 50%;
+			font-family: Calibri;
+			transform: rotate(0deg);
+			transition: 0s;
+		}
+			
+		.item img{
+			width: 70px;
+		}
+		.item{
+			position: absolute;
+			color: white;
+		}
+		.itemdev{
+		margin-left: 20px;
+		}
+		.item dev p{
+		margin-top:8px;
+		}
+		.onee{
+		top: 400px;
+		right: 50px;
+
+		}
+		.twoo{
+		top: 150px;
+		left: 350px;
+		transform: rotate(-90deg);
+
+		}
+		.thre{
+		bottom: 450px;
+		left: 50px;
+		transform: rotate(-180deg);
+		}
+		.four{
+		bottom: 140px;
+		right:  360px;
+		transform: rotate(90deg);
+		}
+		.logoc{
+		width: 400px;
+		position: absolute;
+		top: 50%;
+		left: 27%;
+		transform: translateY(-50%);
+		z-index: 1;
+		}
+		.controls{
+		position: absolute;
+		right: 10%;
+		top: 50%;
+		transform: translateY(-50%);
+		text-align: center;
+		font-family: Calibri;
+		font-size: 40px;
+		}
+		.controls h3{
+		margin: 15px 0;
+		color: #fff;
+		}
+		#up{
+		width: 170px;
+		cursor: pointer;
+		
+		}
+		#down{
+		width: 50px;
+		cursor: pointer;
+		position: absolute;
+		bottom: -100px;
+		right: 160px;
+		}
+		.hider{
+		width: 0;
+		height: 0;
+		border-top: 500px solid #fff;
+		border-right: 500px solid transparent;
+		border-bottom: 500px solid #fff;
+		border-left: 500px solid #fff;
+		position: absolute;
+		left: 0;
+		top: 0;
+		}
+		@keyframes rotateCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+		#circle{
+		 animation: rotateCircle 20s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<nav>
+			<div class="mylogo">
+			<img src="mainlogo.svg" alt="logo">
+			</div>
+			<div class="navi">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="pickup.html">Locate Us</a></li>
+			</ul>
+			</div>
+		</nav>
+			<div class="info">
+			<div class="hider"></div>
+			<img src="big.svg" class="logoc">
+			  <div id="circle">
+					<div class="item  onee">
+					<img src="outdoor1.png">
+						<div>
+							<h1>Outdoor Camera</h1>
+							<p>IP 67 Water-Proof durable units</p>
+						</div>
+					</div>
+					<div class="item twoo">
+					<img src="indoor1.png">
+					<div>
+							<h1>Indoor Camera</h1>
+							<p>High Quality HD images</p>
+						</div>
+					</div>
+					<div class="item thre">
+					<img src="nightvision1.png">
+					<div>
+							<h1>Night Vision Camera</h1>
+							<p>Clear visible perfect Night Vision</p>
+						</div>
+					</div>
+					<div class="item four">
+					<img src="wifi.png">
+					<div>
+							<h1>WIFI Camera</h1>
+							<p>Control from anywhere</p>
+						</div>
+					</div>			
+		       </div>
+	        </div>
+			<div class="controls">
+				<img src="homecam.png" id="up">
+				<h3>YOUR TRUSTED</h3>
+				<h3>SECURITY PARTNER</h3>
+				<img src="sec.png" id="down">
+				
+			</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+	.main{
+		position: relative;
+		overflow: hidden;
+		background: linear-gradient(to left, #06C2A3, #04977F, #FFFFFF);
+		}
+	 body {
+		margin: 0;
+		padding: 0;
+		  }
+		nav{
+			width:80%;
+			position: sticky;
+			margin: 20px auto;
+			z-index: 1;
+			display: flex;
+			align-items: center;
+		}
+		.mylogo{
+			flex-basis: 0%;
+			width:150px;
+			height:auto;
+		}
+		.mylogo img{
+			width: 200px;
+			float: right;
+		}
+		.navi{
+			margin: 0;
+			padding: 0;
+			flex: 1;
+			text-align: right;
+			font-family: Calibri;
+			font-size:17px;
+		}
+		.navi ul li{
+			list-style: none;
+			display: inline-block;
+			margin: 0 10px;
+		}
+		.navi ul li a{
+		color: #000000;
+		text-decoration: none;
+		font-weight: bold;
+		}
+    .products {
+	background: linear-gradient(to left, #06C2A3, #04977F, #FFFFFF);;
+    margin-top: 100px;
+	font-family: Calibri;
+}
+
+.products .container {
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.products .container .products-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 16px;
+}
+
+@media (max-width: 1024px) {
+	.products .container .products-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 767px) {
+	.products .container .products-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.products .container .products-grid .product {
+	background-color: #FFF;
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.products .container .products-grid .product .img-box {
+	display: block;
+	width: 100%;
+	border-bottom: 5px solid #FF9FDB;
+}
+
+.products .container .productss-grid .product .img {
+	display: block;
+	width: 100%;
+	height: 128px;
+	object-fit: cover;
+}
+
+.products .container .products-grid .product .content {
+	padding: 16px;
+}
+.topic{
+	font-family: Calibri;
+	font-weight: bold;
+	font-size: 35px;
+}
+	</style>
+
+</head>
+<body>
+<div class="main">
+	<nav>
+		<div class="mylogo">
+			<img src="mainlogo.svg" alt="logo">
+		</div>
+		<div class="navi">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="pickup.html">Locate Us</a></li>
+			</ul>
+		</div>
+	</nav>
+   
+		
+		<section id="products" class="products">
+			<div class="container">
+				<h2 class="topic">PRODUCTS</h2>
+				
+				<div class="products-grid">
+
+					<div class="product">
+						<figure class="img-box">
+							<img src="d1.jpg" alt="Website Service" class="img" />
+						</figure>
+						<div class="content">
+							<h3>Dark Fighter Technology Cameras</h3>
+							<p>
+								These cameras can pick up coloured images in very low-light conditions.
+								Dark fighter technology can be used in the day and night and offer optimal performance thanks to its wide range of capabilities. They are equipped with ½” CMOS progressive scan sensors which allows the device to pick up high-quality images and doesn’t require an extra light source – which makes the perfect night time security surveillance camera.
+							</p>
+						</div>
+					</div>
+
+					<div class="product">
+						<figure class="img-box">
+							<img src="d2.jpg" alt="App Service" class="img" />
+						</figure>
+						<div class="content">
+							<h3>ANPR/LPR Cameras</h3>
+							<p>
+								ANPR and LPR cameras are used to read and store data on registration plates.
+								They offer a simple and efficient solution to many organisations including tolling, hotel overstay management and the obvious: car parking. ANRP stands for Automatic Number Plate Recognition (LPR cameras stands for License plate cameras) and these devices help to obtain copious information in a high traffic area to keep any premises secure.
+							</p>
+						</div>
+					</div>
+					
+					<div class="product">
+						<figure class="img-box">
+							<img src="d3.jpg" alt="Games Service" class="img" />
+						</figure>
+						<div class="content">
+							<h3>Internal and External Dome Camera</h3>
+							<p>
+								The dome camera is one most commonly used for indoor and outdoor security and surveillance.
+								The shape of the camera makes it difficult for onlookers to tell which way the camera is facing, which is a strong piece of design, deterring criminals by creating an air of uncertainty.
+							</p>
+						</div>
+					</div>
+
+					<div class="product">
+						<figure class="img-box">
+							<img src="d4.jpg" alt="Mentoring Service" class="img" />
+						</figure>
+						<div class="content">
+							<h3>Bullet Camera</h3>
+							<p>
+								Bullet cameras are long and cylindrical in shape and are ideal for outdoor use.
+								Their strengths lie specifically in applications which require long distance viewing. Installed within protective casings, the cameras are shielded against dust, dirt and other natural elements. The cameras can easily be mounted with a mounting bracket, and come fitted with either fixed or varifocal lenses depending on the requirements of its intended application.
+							</p>
+						</div>
+					</div>
+
+                    <div class="product">
+						<figure class="img-box">
+							<img src="d5.jpg" alt="Website Service" class="img" />
+						</figure>
+						<div class="content">
+							<h3>C-mount Camera</h3>
+							<p>
+								Coming with detachable lenses, C-mount cameras allow for simple lens changes 
+								to fit different applications. C-mount cameras can cover distances beyond 40 ft thanks to the possibility to use special lenses with these cameras, whereas standard CCTV lenses can only cover distances of 35-40 ft.
+							</p>
+						</div>
+					</div>
+
+					<div class="product">
+						<figure class="img-box">
+							<img src="d6.jpg" alt="App Service" class="img" />
+						</figure>
+						<div class="content">
+							<h3>Day/Night Camera</h3>
+							<p>
+								Capable of operating in both normal and poorly lit environments, 
+								these cameras benefit from not requiring inbuilt infrared illuminators 
+								as they can capture clear video images in the dark thanks to their extra
+								sensitive imaging chips. For this reason, these cameras are ideal for outdoor surveillance applications in which IR cameras are unable to function optimally.
+							</p>
+						</div>
+					</div>
+					
+					<div class="product">
+						<figure class="img-box">
+							<img src="d7.jpg" alt="Games Service" class="img" />
+						</figure>
+						<div class="content">
+							<h3>PTZ Pan Tilt & Zoom Camera</h3>
+							<p>
+								PTZ – Pan/tilt/zoom – cameras allow the camera to be moved left or right (panning), 
+								up and down (tilting) and even allow the lens to be zoomed closer or farther. These cameras are used in situations where a live guard or surveillance specialist is there operating the security systems.
+							</p>
+						</div>
+					</div>
+
+					<div class="product">
+						<figure class="img-box">
+							<img src="d8.jpg" alt="Mentoring Service" class="img" />
+						</figure>
+						<div class="content">
+							<h3>Discreet CCTV</h3>
+							<p>
+								These types of cameras allow for discreet placement which means you can capture
+								good footage of theft and criminal damage. Discreet CCTV cameras beneficial because
+								criminals will be less likely to spot them and therefore, they are less likely to be damaged in the process.  
+							</p>
+						</div>
+					</div>
+
+                    <div class="product">
+						<figure class="img-box">
+							<img src="d9.jpg" alt="Website Service" class="img" />
+						</figure>
+						<div class="content">
+							<h3>Thermal Image Cameras/Infrared Cameras</h3>
+							<p>
+								One of the best 24 hour surveillance cameras around providing airports, seaports, boards and many other critical 
+								infrastructures with quality images, no matter what time of day it is. Infrared cameras have small LEDs surrounding 
+								the lens to help pick up moving figures in pitch black. Thermal image cameras can see over long distances, up to 300 metres away!
+							</p>
+						</div>
+					</div>
+
+					<div class="product">
+						<figure class="img-box">
+							<img src="d10.jpg" alt="App Service" class="img" />
+						</figure>
+						<div class="content">
+							<h3>Varifocal Cameras</h3>
+							<p>
+								With the ability to zoom in and out without forfeiting its focus. Varifocal cameras allow you to adjust the focal length, 
+								the angle and increase or decrease the zoom – ideal for obtaining footage in a square room where you would normally experience a ‘dead zone’ with any alternative, fixed lense camera.
+							</p>
+						</div>
+					</div>
+					
+					<div class="product">
+						<figure class="img-box">
+							<img src="d11.jpg" alt="Games Service" class="img" />
+						</figure>
+						<div class="content">
+							<h3>Network Cameras</h3>
+							<p>
+								These cameras share the images across the internet, so CCTV footage can be easily accessed.
+								Network cameras are ideal for both domestic and commercial purposes because you can see what’s going on whilst away from the property.
+							</p>
+						</div>
+					</div>
+
+					<div class="product">
+						<figure class="img-box">
+							<img src="d12.jpg" alt="Mentoring Service" class="img" />
+						</figure>
+						<div class="content">
+							<h3>High Definition Cameras</h3>
+							<p>
+								High definition cameras have such a high resolution that they’re mainly used 
+								in high risk establishments such as banks and casinos. This is to capture a good image of anyone who enters and exits to maintain high security and maximum safety. These cameras are great for spotting misconduct and allows the user to zoom in for extra clarity, should the footage need to be used in court.
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+</div>    
+</body>
+</html>
